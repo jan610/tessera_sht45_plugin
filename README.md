@@ -17,11 +17,11 @@ I²C address: `0x44`. Update interval: 5 seconds. The Adafruit SHT45 breakout is
 
 ## Sensor entities
 
-Sensoren werden im Hauptgerät **"Guiton 4 Inch"** angezeigt:
-- `sensor.guiton4inch_raumtemperatur` - Temperatur in °C
-- `sensor.guiton4inch_luftfeuchtigkeit` - Luftfeuchtigkeit in %
+Sensors are shown in the main device **"Guiton 4 Inch"**:
+- `sensor.guiton4inch_room_temperature` - Temperature in °C
+- `sensor.guiton4inch_humidity` - Humidity in %
 
-Tessera kann die Sensoren mit einem **Sensor/Value Tile** anzeigen. Die Hardware-Schnittstelle wird vom Plugin definiert; das visuelle Tile erstellst du im Tessera Layout Editor.
+Tessera can display sensors with a **Sensor/Value Tile**. The hardware interface is defined by the plugin; create the visual tile in the Tessera Layout Editor.
 
 ## Test procedure
 

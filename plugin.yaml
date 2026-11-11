@@ -3,14 +3,14 @@ sensor:
     i2c_id: touch_bus
     address: 0x44
     temperature:
-      name: "Raumtemperatur"
-      id: sht45_temperature
+      name: "Room Temperature"
+      id: room_temperature
       device_class: temperature
       state_class: measurement
       accuracy_decimals: 2
     humidity:
-      name: "Luftfeuchtigkeit"
-      id: sht45_humidity
+      name: "Humidity"
+      id: humidity
       device_class: humidity
       state_class: measurement
       accuracy_decimals: 1
