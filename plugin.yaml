@@ -1,13 +1,6 @@
-i2c:
-  - id: sht45_i2c
-    sda: GPIO40
-    scl: GPIO2
-    scan: true
-    frequency: 100kHz
-
 sensor:
   - platform: sht4x
-    i2c_id: sht45_i2c
+    i2c_id: touch_bus
     address: 0x44
     temperature:
       name: "Raumtemperatur"
