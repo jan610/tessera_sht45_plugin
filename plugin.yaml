@@ -3,8 +3,8 @@ sensor:
     i2c_id: touch_bus
     address: 0x44
     temperature:
-      name: "Room Temperature"
-      id: room_temperature
+      name: "Temperature"
+      id: temperature
       device_class: temperature
       state_class: measurement
       accuracy_decimals: 2
