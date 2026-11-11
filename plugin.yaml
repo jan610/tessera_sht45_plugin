@@ -22,10 +22,3 @@ sensor:
       state_class: measurement
       accuracy_decimals: 1
     update_interval: 5s
-
-# Device metadata for Home Assistant - groups sensors under one device
-device_info:
-  identification:
-    manufacturer: Adafruit
-    model: SHT45 Precision Humidity and Temperature Sensor
-    name: SHT45 Raumklima

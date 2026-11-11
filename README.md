@@ -17,20 +17,11 @@ I²C address: `0x44`. Update interval: 5 seconds. The Adafruit SHT45 breakout is
 
 ## Sensor entities
 
-- `sensor.sht45_raumklima_temperatur`
-- `sensor.sht45_raumklima_feuchtigkeit`
+Sensoren werden im Hauptgerät **"Guiton 4 Inch"** angezeigt:
+- `sensor.guiton4inch_raumtemperatur` - Temperatur in °C
+- `sensor.guiton4inch_luftfeuchtigkeit` - Luftfeuchtigkeit in %
 
-Tessera can display the resulting Home Assistant entities using its existing sensor/value tiles. This plugin defines the hardware interface; you create the visual tile in Tessera's Layout editor.
-
-## Device info
-
-Both sensors appear under a single Home Assistant device:
-
-- **Device name:** SHT45 Raumklima  
-- **Manufacturer:** Adafruit  
-- **Model:** SHT45 Precision Humidity and Temperature Sensor  
-
-This makes it easier to group, rename, or automate all room-climate sensors together.
+Tessera kann die Sensoren mit einem **Sensor/Value Tile** anzeigen. Die Hardware-Schnittstelle wird vom Plugin definiert; das visuelle Tile erstellst du im Tessera Layout Editor.
 
 ## Test procedure
 
@@ -39,8 +30,14 @@ This makes it easier to group, rename, or automate all room-climate sensors toge
 3. Build and flash. Watch the ESPHome logs in the build output for:
    - `I2C scan found device at address 0x44`
    - Sensor updates at 5-second intervals
-4. In Home Assistant, verify a new device **SHT45 Raumklima** appears with temperature and humidity entities updating every 5 seconds.
+4. In Home Assistant, verify temperature and humidity sensors appear under the **Guiton 4 Inch** device, updating every 5 seconds.
 
-## Compatibility status
+## Version History
 
-Production-ready plugin for Tessera + ESPHome. Tested on Guition ESP32-S3-4848S040 with Adafruit SHT45 breakout at I²C address `0x44`.
+### 0.1.2
+- Removed `device_info` block (not supported in ESPHome 2026.x)
+- Updated documentation to reflect that sensors appear under main device "Guiton 4 Inch"
+
+### 0.1.1
+- Initial release with I²C SHT4x sensor integration
+
