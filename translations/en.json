@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "name": "English"
+  },
+  "screen": {},
+  "app": {
+    "name": "Adafruit SHT45 Room Climate",
+    "summary": "Adds an Adafruit SHT45 temperature and humidity sensor to the Guition 4-inch screen."
+  }
+}

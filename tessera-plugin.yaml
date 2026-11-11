@@ -1,0 +1,13 @@
+# SHT45 hardware support for the Guition ESP32-S3-4848S040.
+id: sht45_room_climate
+version: 0.1.1
+api: "0.8"
+icon: thermometer
+maintainer: community
+license: MIT
+stage: beta
+topics: [home, weather]
+requires:
+  esphome: 2026.6.2
+boards: [guition]
+flash_kb: 2
